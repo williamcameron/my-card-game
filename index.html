@@ -15,8 +15,45 @@
 
     <!-- Custom styles for this template -->
     <style>
+      * {
+        padding:0px;
+        margin:0px;
+      }
       body {
         padding-top: 54px;
+      }
+
+      .box {
+        border: 1px black solid;
+        padding: 5px;
+      }
+
+      .player1board {
+        height: 50vh;
+      }
+
+      .player2board {
+        height: 40vh;
+      }
+      .battlefield {
+        height: 35vh;
+        padding: 0px 15px 10px 15px;
+      }
+      .hand {
+        height: 15vh;
+        padding: 0px 15px 10px 15px;
+      }
+      .card {
+        float:left;
+        width: 8vh;
+        height:11vh;
+        margin: 2px;
+      }
+      .card h1 {
+        font-size: 0.6em;
+      }
+      .card p {
+        font-size: 0.3em;
       }
       @media (min-width: 992px) {
         body {
@@ -40,12 +77,12 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="/my-card-game/">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="/my-card-game/about">About</a>
             </li>
           </ul>
         </div>
@@ -54,15 +91,61 @@
 
     <!-- Page Content -->
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h1 class="mt-5">My Card Game</h1>
-          <p class="lead">Starting point landing page!</p>
-          <ul class="list-unstyled">
-            <li>Bootstrap 4.1.1</li>
-            <li>jQuery 3.3.1</li>
-          </ul>
+      <div class="row player2board">
+        <!--
+          <div class="col-lg-12 text-center">
+            <h1 class="mt-5">My Card Game</h1>
+            <p class="lead">Starting point landing page!</p>
+            <ul class="list-unstyled">
+              <li>Bootstrap 4.1.1</li>
+              <li>jQuery 3.3.1</li>
+            </ul>
+          </div>
+        !-->
+        <div class="col-lg-1 box">
+
         </div>
+        <div class="col-lg-11 box">
+
+        </div>
+      </div>
+      <div class="row player1board">
+        
+          <div class="col-lg-1 box">
+
+          </div>
+          <div class="col-lg-11 box">
+            <div class="row battlefield">
+              <div class="col-lg-12 box"></div>
+            </div>
+            <div class="row hand">
+              <div class="col-lg-12 box">
+                  <div class="card">
+                    <h1>Card Name</h1>
+                    <p>Some card text.</p>
+                  </div>
+                  <div class="card">
+                    <h1>Card Name</h1>
+                    <p>Some card text.</p>
+                  </div>
+                  <div class="card">
+                    <h1>Card Name</h1>
+                    <p>Some card text.</p>
+                  </div>
+                  <div class="card">
+                    <h1>Card Name</h1>
+                    <p>Some card text.</p>
+                  </div>
+                  <div class="card">
+                    <h1>Card Name</h1>
+                    <p>Some card text.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+        
+        
       </div>
     </div>
 
